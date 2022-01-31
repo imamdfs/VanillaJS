@@ -1,0 +1,142 @@
+.title {
+  font-family: "Franklin Gothic Medium";
+  font-weight: 500;
+}
+
+.itemList .title {
+  flex-grow: 1;
+  font-family: Arial;
+  font-weight: 300;
+  font-size: 1.25em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 20rem;
+}
+
+.container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background-color: #ff33ae;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 2rem;
+  gap: 10px;
+  background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+}
+
+.inputTodo {
+  flex-grow: 1;
+  display: block;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+}
+
+.addButton {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 5px 25px;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+.removeButton,
+.editButton {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.addButton {
+  background-color: #ff33ae;
+  border-color: #ff33ae;
+}
+
+.addButton:hover {
+  background-color: #d62e93;
+  border-color: #d62e93;
+}
+
+.editButton,
+.removeButton {
+  color: #ff33ae;
+  background-color: white;
+}
+
+.editButton:hover,
+.removeButton:hover {
+  background-color: lightgray;
+}
+
+.full-width {
+  flex: 0 0 100%;
+}
+
+.itemTodo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid lightgray;
+  padding: 1rem 3rem;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 3rem 1rem;
+  }
+}
